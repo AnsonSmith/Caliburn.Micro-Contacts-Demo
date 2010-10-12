@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="PersonalContactsDemo.Views.NoResultsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Border Margin="8 20 8 8"
+	        HorizontalAlignment="Center">
+        <StackPanel>
+            <TextBlock Style="{StaticResource label}" Text="No results were found for that search text." />
+            <StackPanel Orientation="Horizontal"
+			            HorizontalAlignment="Center">
+                <TextBlock Style="{StaticResource label}" Text=" Would you like to " />
+                <Button x:Name="AddPersonContact" Style="{StaticResource linkButton}">
+                    <TextBlock Text="Create a New Contact" TextDecorations="Underline" />
+                </Button>
+                <TextBlock Style="{StaticResource label}" Text="?" />
+            </StackPanel>
+        </StackPanel>
+    </Border>
+
+</UserControl>

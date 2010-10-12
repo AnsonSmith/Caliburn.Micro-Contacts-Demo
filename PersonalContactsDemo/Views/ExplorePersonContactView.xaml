@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="PersonalContactsDemo.Views.ExplorePersonContactView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+  
+        <Image Source="/Resources/Images/User128.png" VerticalAlignment="Top" HorizontalAlignment="Center" Width="128" Height="128"/>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+                <Button Grid.Row="0" Grid.Column="1" x:Name="ClosePerson" Style="{StaticResource closeButton}" HorizontalAlignment="Right"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource label}" Text="First Name"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" Style="{StaticResource smallEmphasis}" x:Name="FirstName" />
+                <TextBlock Grid.Row="1" Grid.Column="1" Style="{StaticResource label}" Text="Last Name"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Style="{StaticResource smallEmphasis}" x:Name="LastName" />
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Style="{StaticResource label}" Text="Home Phone"/>
+                <TextBlock Grid.Row="4" Grid.Column="0" Style="{StaticResource smallEmphasis}" x:Name="HomePhone" />
+                <TextBlock Grid.Row="5" Style="{StaticResource label}" Text="Work Phone" Height="19" Margin="0,16,0,0" VerticalAlignment="Top" />
+                <TextBlock Grid.Row="6" Grid.Column="0" Style="{StaticResource smallEmphasis}" x:Name="WorkPhone" />
+                <TextBlock Grid.Row="3" Grid.Column="1" Style="{StaticResource label}" Text="Mobile Phone"/>
+                <TextBlock Grid.Row="4" Grid.Column="1" Style="{StaticResource smallEmphasis}" x:Name="MobilePhone" />
+
+                <TextBlock Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource label}" Text="Email"/>
+                <TextBlock Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"  Style="{StaticResource smallEmphasis}" x:Name="EmailAddress" />
+
+        </Grid>
+    </Grid>
+    
+</UserControl>

@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="PersonalContactsDemo.Views.AddPersonContactView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/Resources/Images/User128.png" Grid.Column="0" Width="128" Height="128" VerticalAlignment="Top"  HorizontalAlignment="Center"/>
+        <StackPanel Grid.Column="1">
+            <Button x:Name="ClosePerson" Style="{StaticResource closeButton}" HorizontalAlignment="Right"/>
+            <TextBlock Style="{StaticResource label}" Text="First Name:" />
+            <TextBox x:Name="FirstName">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="Black" />
+                </TextBox.CaretBrush>
+            </TextBox>
+
+            <TextBlock Style="{StaticResource label}" Text="Last Name:" />
+            <TextBox x:Name="LastName">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="Black" />
+                </TextBox.CaretBrush>
+            </TextBox>
+            <TextBlock Style="{StaticResource label}" Text="Home Phone:" />
+            <TextBox x:Name="HomePhone">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="Black" />
+                </TextBox.CaretBrush>
+            </TextBox>
+            <TextBlock Style="{StaticResource label}" Text="Work Phone:" />
+            <TextBox x:Name="WorkPhone">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="Black" />
+                </TextBox.CaretBrush>
+            </TextBox>
+            <TextBlock Style="{StaticResource label}" Text="Mobile Phone:" />
+            <TextBox x:Name="MobilePhone">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="Black" />
+                </TextBox.CaretBrush>
+            </TextBox>
+            <TextBlock Style="{StaticResource label}" Text="Email Address:" />
+            <TextBox x:Name="EmailAddress">
+                <TextBox.CaretBrush>
+                    <SolidColorBrush Color="Black" />
+                </TextBox.CaretBrush>
+            </TextBox>
+
+            <Button x:Name="AddPersonContact" Content="Add" HorizontalAlignment="Right" Margin="0 12 0 0" />
+        </StackPanel>
+    </Grid>
+    
+</UserControl>
